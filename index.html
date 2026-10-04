@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ananya Sridhar — AI engineer building speech tools for kids</title>
+<meta name="description" content="Ananya Sridhar builds AI systems for speech therapy, robotics and computer vision.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231a1446'/%3E%3Crect x='18' y='38' width='12' height='24' rx='6' fill='%23ffc93c'/%3E%3Crect x='44' y='22' width='12' height='56' rx='6' fill='%232bd4a0'/%3E%3Crect x='70' y='34' width='12' height='32' rx='6' fill='%23ff6fb1'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f1ff;--ink:#1a1446;--mut:#5a5585;--line:#d9d4f5;--panel:#fff;--sun:#ffc93c;--mint:#2bd4a0;--pink:#ff6fb1;--link:#4a2fd8;
+--d:"Bricolage Grotesque",system-ui,sans-serif;--b:Figtree,system-ui,-apple-system,"Segoe UI",sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#120e33;--ink:#f3f1ff;--mut:#a9a4d6;--line:#2c2660;--panel:#1b1649;--link:#b3a3ff}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--b);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:6px}
+.w{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-weight:600}
+nav a{text-decoration:none}nav div{display:flex;gap:24px}
+nav .me{font-family:var(--d);font-weight:800;font-size:20px}
+.hero{padding:56px 0 24px}
+h1{font:800 clamp(40px,8.2vw,92px)/.98 var(--d);letter-spacing:-.035em;margin:0;max-width:13em}
+h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--sun) 62% 92%,transparent 92%)}
+.sub{font-size:clamp(18px,2.4vw,22px);color:var(--mut);max-width:34em;margin:24px 0 0}
+#wave{display:block;width:100%;height:150px;margin:44px 0 8px}
+.hint{font-size:14px;color:var(--mut)}
+section{padding:72px 0 0}
+h2{font:700 clamp(28px,4.5vw,42px)/1.1 var(--d);letter-spacing:-.025em;margin:0 0 8px}
+.lede{color:var(--mut);max-width:36em;margin:0 0 32px}
+.feat{display:grid;grid-template-columns:1.25fr 1fr;border-radius:28px;overflow:hidden;background:var(--ink);color:var(--bg)}
+.feat .l{padding:38px}
+.feat .r{background:var(--sun);color:#1a1446;padding:38px;display:flex;flex-direction:column;justify-content:space-between;gap:24px}
+.feat h3{font:800 clamp(28px,4vw,40px)/1.05 var(--d);margin:0 0 14px;letter-spacing:-.02em}
+.feat p{margin:0;opacity:.88}
+.chars{display:flex;gap:8px;flex-wrap:wrap}
+.chars span{font:700 13px var(--d);padding:6px 12px;border-radius:99px;background:#1a1446;color:#fff}
+.r p{font:600 19px/1.35 var(--d)}
+.grp{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:36px 0;border-top:2px solid var(--ink)}
+.grp>h3{font:800 22px/1.15 var(--d);margin:0;position:relative;padding-left:22px}
+.grp>h3::before{content:"";position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:50%;background:var(--c)}
+.grp>h3 small{display:block;font:500 14px/1.45 var(--b);color:var(--mut);margin-top:6px}
+.p{padding:0 0 26px}.p+.p{padding-top:26px;border-top:1px solid var(--line)}.p:last-child{padding-bottom:0}
+.p h4{font:700 21px/1.25 var(--d);margin:0 0 6px}
+.p p{margin:0 0 12px;color:var(--mut);max-width:40em}
+.tags{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--mut);margin:0 0 10px;padding:0;list-style:none}
+.tags li::before{content:"#";color:var(--c);font-weight:700}
+.lk{display:flex;gap:18px;font-weight:600;font-size:15px}
+.lk a{color:var(--link);text-underline-offset:4px}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{padding:8px 16px;border-radius:99px;background:var(--panel);border:1px solid var(--line);font-weight:500;font-size:15px}
+.contact{margin:72px 0 0;padding:48px 0 56px;border-top:2px solid var(--ink)}
+.contact h2{font-size:clamp(32px,6vw,64px)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{padding:13px 24px;border-radius:99px;font-weight:600;text-decoration:none;border:2px solid var(--ink)}
+.btn.f{background:var(--ink);color:var(--bg)}
+.btn:hover{background:var(--mint);color:#1a1446;border-color:#1a1446}
+@media (max-width:760px){.feat{grid-template-columns:1fr}.grp{grid-template-columns:1fr;gap:16px}.feat .l,.feat .r{padding:26px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><a class="me" href="#top">Ananya Sridhar</a><div><a href="#work">Work</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero" id="top">
+  <h1>I build AI that <em>listens</em> to kids learning to speak.</h1>
+  <p class="sub">AI engineer working on speech therapy tools, multi-agent systems, robotics and computer vision research.</p>
+  <canvas id="wave" role="img" aria-label="Animated sound wave"></canvas>
+  <div class="hint">Move your cursor over the wave.</div>
+</header>
+
+<section id="work">
+  <h2>Selected work</h2>
+  <p class="lede">Most of it started with one question: how do we make practice feel like play?</p>
+
+  <article class="feat" data-id="agenti">
+    <div class="l">
+      <h3>Vaaksudhi</h3>
+      <p>A speech therapy platform for children. It scores pronunciation across 8 Indian languages with a LangGraph assessment, adapts game difficulty to each child, and gives therapists a dashboard and parents a portal.</p>
+      <ul class="tags" style="margin-top:18px;--c:var(--mint)"><li>FastAPI</li><li>React</li><li>LangGraph</li><li>PostgreSQL</li></ul>
+      <div class="lk" style="color:#fff"><a href="https://github.com/darayavahoush/agenti_ai" style="color:var(--mint)">View code</a></div>
+    </div>
+    <div class="r">
+      <div class="chars"><span>BreathQuest</span><span>VoiceHurdleRace</span><span>VaakMirror</span><span>Chime</span></div>
+      <p>Four games, one adaptive engine, English to Bengali.</p>
+    </div>
+  </article>
+
+  <div class="grp" style="--c:var(--mint)">
+    <h3>Speech and health<small>Tools for therapists, parents and children.</small></h3>
+    <div>
+      <div class="p" data-id="vaakify"><h4>Vaakify</h4><p>Pronunciation practice with six animated character companions. Checks phoneme-level accuracy in English, Hindi and Kannada, and builds a drill when a child keeps missing the same sounds.</p><ul class="tags"><li>faster-whisper</li><li>wav2vec2</li><li>React</li></ul><div class="lk"><a href="https://github.com/darayavahoush/speech-repeater">Code</a></div></div>
+      <div class="p" data-id="quest"><h4>Quest Hub</h4><p>One containerized hub for BreathQuest, VaakMirror and Chime, so therapy games share a single login and database.</p><ul class="tags"><li>Docker</li><li>Hugging Face Spaces</li></ul><div class="lk"><a href="https://github.com/darayavahoush/quest-games">Code</a></div></div>
+      <div class="p" data-id="vaakbot"><h4>VaakBot</h4><p>A retrieval-augmented chatbot that answers speech therapy and autism care questions from a clinical reference library. Designed for 100 to 200 users at about ₹3,000 to ₹5,000 a month.</p><ul class="tags"><li>RAG</li><li>Azure OpenAI</li><li>Azure AI Search</li></ul><div class="lk"><a href="https://github.com/darayavahoush/vaakbot">Code</a></div></div>
+    </div>
+  </div>
+
+  <div class="grp" style="--c:var(--pink)">
+    <h3>Agents and robots<small>Planning and sensing under pressure.</small></h3>
+    <div>
+      <div class="p" data-id="aegis"><h4>Aegis</h4><p>A disaster response simulation where drones, rescue teams and vehicles coordinate after floods, cyclones and earthquakes. Combines RL and LLM agents, A* and MCTS planning, and CNN and LSTM perception. Built with Avinandan and Saatwik.</p><ul class="tags"><li>multi-agent</li><li>reinforcement learning</li><li>MCTS</li></ul><div class="lk"><a href="https://github.com/darayavahoush/disaster-response-game">Code</a></div></div>
+      <div class="p" data-id="firebot"><h4>FireBot</h4><p>An autonomous firefighting robot with a simulator, bearing-only Extended Information Filter sensor fusion, motion planning, PPO training and a fire-event database.</p><ul class="tags"><li>sensor fusion</li><li>PPO</li><li>PostgreSQL</li></ul><div class="lk"><a href="https://github.com/darayavahoush/firebot">Code</a></div></div>
+      <div class="p" data-id="arm"><h4>Robotic Manipulator Simulator</h4><p>Interactive 3D forward and inverse kinematics for RRR and PPP arms, with workspace analysis, trajectory tracking and link-length optimization.</p><ul class="tags"><li>kinematics</li><li>optimization</li></ul><div class="lk"><a href="https://github.com/darayavahoush/robotic-manipulator">Code</a></div></div>
+    </div>
+  </div>
+
+  <div class="grp" style="--c:var(--sun)">
+    <h3>Vision research<small>Finding what matches.</small></h3>
+    <div>
+      <div class="p" data-id="geco"><h4>GECO-Enhanced</h4><p>Finds matching keypoints between two images of the same kind of object, using DINOv2 features and confidence-weighted Optimal Transport. Click a point on one image and see where it lands on the other.</p><ul class="tags"><li>DINOv2</li><li>optimal transport</li><li>PyTorch</li></ul><div class="lk"><a href="https://github.com/darayavahoush/geco">Code</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Tools I reach for</h2>
+  <div class="skills"><span>Python</span><span>PyTorch</span><span>LangGraph</span><span>RAG</span><span>Speech and audio ML</span><span>Computer vision</span><span>Reinforcement learning</span><span>Robotics simulation</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>Azure</span></div>
+</section>
+
+<footer class="contact" id="contact">
+  <h2>Let's build something useful.</h2>
+  <p class="lede" style="margin:0">Message me on LinkedIn or browse the code on GitHub.</p>
+  <div class="btns"><a class="btn f" href="https://www.linkedin.com/in/ananya-sridhar-ai">Message on LinkedIn</a><a class="btn" href="https://github.com/darayavahoush">See GitHub</a></div>
+</footer>
+</div>
+
+<script>
+// Add live demo URLs by project id; a "Live demo" link appears automatically.
+var LIVE={agenti:"",vaakify:"",quest:"",vaakbot:"",aegis:"",firebot:"",geco:"",arm:""};
+document.querySelectorAll("[data-id]").forEach(function(e){var u=LIVE[e.dataset.id];if(!u)return;var a=document.createElement("a");a.href=u;a.textContent="Live demo";e.querySelector(".lk").prepend(a)});
+
+(function(){
+var c=document.getElementById("wave"),x=c.getContext("2d"),N=72,px=-1,t=0,cols=["#ffc93c","#2bd4a0","#ff6fb1"];
+var still=matchMedia("(prefers-reduced-motion:reduce)").matches;
+function size(){var r=c.getBoundingClientRect(),d=devicePixelRatio||1;c.width=r.width*d;c.height=r.height*d;x.setTransform(d,0,0,d,0,0)}
+function draw(){
+  var w=c.clientWidth,h=c.clientHeight,g=w/N,bw=Math.max(3,g*.5);
+  x.clearRect(0,0,w,h);
+  for(var i=0;i<N;i++){
+    var u=i/N,cx=i*g+g/2;
+    var a=.35+.25*Math.sin(u*9+t)+.2*Math.sin(u*23-t*1.7);
+    if(px>=0){var d=Math.abs(cx-px)/w;a+=Math.max(0,.55-d*3.2)}
+    a=Math.max(.06,Math.min(1,a));
+    var bh=a*h;
+    x.fillStyle=cols[Math.floor(u*3+t*.15)%3<0?0:Math.floor(u*3+t*.15)%3];
+    x.beginPath();x.roundRect(cx-bw/2,(h-bh)/2,bw,bh,bw/2);x.fill();
+  }
+}
+function loop(){t+=.03;draw();if(!still)requestAnimationFrame(loop)}
+c.addEventListener("pointermove",function(e){px=e.clientX-c.getBoundingClientRect().left;if(still)draw()});
+c.addEventListener("pointerleave",function(){px=-1;if(still)draw()});
+addEventListener("resize",function(){size();draw()});
+size();still?draw():loop();
+})();
+</script>
+</body>
+</html>
