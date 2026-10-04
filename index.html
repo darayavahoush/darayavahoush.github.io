@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ananya Sridhar — AI engineer</title>
-<meta name="description" content="Ananya Sridhar builds AI systems for speech therapy, robotics and computer vision.">
+<title>Ananya Sridhar — AI Engineer: Speech AI, Agentic Systems, Robotics</title>
+<meta name="description" content="Ananya Sridhar is an AI engineer in Mumbai building speech AI, agentic systems and autonomous robotics.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231a1446'/%3E%3Crect x='18' y='38' width='12' height='24' rx='6' fill='%23ffc93c'/%3E%3Crect x='44' y='22' width='12' height='56' rx='6' fill='%232bd4a0'/%3E%3Crect x='70' y='34' width='12' height='32' rx='6' fill='%23ff6fb1'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,6 +68,7 @@ h2{font:700 clamp(28px,4.5vw,42px)/1.1 var(--d);letter-spacing:-.025em;margin:0 
 .lk{flex-wrap:wrap;align-items:center}
 .p.hl{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;margin-bottom:26px}
 .p.hl+.p{border-top:0;padding-top:0}
+.bl{margin:0 0 12px;padding-left:20px;color:var(--mut);max-width:40em}.bl li{margin:5px 0}.dt{font-size:14px;color:var(--mut);margin:-2px 0 10px}.p h4+.dt{margin-top:-2px}
 </style>
 </head>
 <body>
@@ -75,17 +76,18 @@ h2{font:700 clamp(28px,4.5vw,42px)/1.1 var(--d);letter-spacing:-.025em;margin:0 
 <nav><a class="me" href="#top">Ananya Sridhar</a><div><a href="#experience">Experience</a><a href="#work">Work</a><a href="#contact">Contact</a></div></nav>
 <header class="hero" id="top">
   <h1>I build AI that <em>listens</em> to kids learning to speak.</h1>
-  <p class="sub">AI engineer working on speech therapy, language and law, robotics, and computer vision. Everything below is real code; the projects marked live you can open and use.</p>
+  <p class="sub">AI engineer in Mumbai building speech AI, agentic systems and autonomous robotics. Open to full-time roles and research collaborations. Projects marked live are ones you can open and use.</p>
   <div class="live" id="live" aria-label="Live projects"></div>
   <canvas id="wave" role="img" aria-label="Animated sound wave"></canvas>
   <div class="hint">Move your cursor over the wave.</div>
 </header>
-<section id="experience"><h2>Experience</h2><p class="lede">Two internships where the work shipped to real users.</p>
-<div class="grp" style="--c:var(--mint)"><h3>Manas Learning<small>Intern. A Chennai centre supporting children with learning difficulties.</small></h3><div><div class="p"><p>Built and deployed Vaaksudhi and Vaakify, speech therapy platforms for children with games, pronunciation feedback and tools for therapists and parents. Both now run on the Manas Learning domain.</p><ul class="tags"><li>FastAPI</li><li>React</li><li>speech ML</li></ul><div class="lk"><a class="go" href="https://vaaksudhi.manaslearning.com">Vaaksudhi live</a><a class="go" href="https://vaakify.manaslearning.com">Vaakify live</a><a href="https://manaslearning.com">manaslearning.com</a></div></div></div></div>
-<div class="grp" style="--c:var(--sun)"><h3>Nivesh<small>Intern. A wealth management platform for mutual funds, insurance and other investments.</small></h3><div><div class="p"><p>Built multi-stage AI pipelines for audio transcription, CRM analysis, portfolio review and call notes, using Azure and Sarvam AI.</p><ul class="tags"><li>Azure</li><li>Sarvam AI</li><li>LLM pipelines</li></ul></div></div></div></section>
+<section id="experience"><h2>Experience</h2><p class="lede">Two engineering roles where the work shipped to real users.</p>
+<div class="grp" style="--c:var(--mint)"><h3>Manas Learning<small>Mumbai</small></h3><div><div class="p"><h4>Machine Learning Engineer</h4><div class="dt">March 2026 to present</div><p>Built and deployed an end-to-end pediatric speech therapy platform that runs clinical assessments in 8 Indian languages.</p><ul class="bl"><li>Real-time pronunciation scoring that chains Faster-Whisper, Vosk and Kokoro/Coqui TTS with phoneme-level acoustic checks (Librosa, Epitran).</li><li>LangGraph pipeline that runs diagnostic tests, classifies errors by place, manner and voicing, and writes structured clinician reports.</li><li>Q-learning difficulty controller that adapts practice games to each child's acoustic accuracy.</li><li>MediaPipe facial landmarks for live oral-motor exercise feedback.</li><li>Full-stack delivery: FastAPI, PostgreSQL with Alembic migrations, COPPA-compliant parental consent, React and Vite.</li></ul><div class="lk"><a class="go" href="https://vaaksudhi.manaslearning.com">Vaaksudhi live</a><a class="go" href="https://vaakify.manaslearning.com">Vaakify live</a></div></div></div></div>
+<div class="grp" style="--c:var(--sun)"><h3>Nivesh<small>Mumbai</small></h3><div><div class="p"><h4>Machine Learning Engineer</h4><div class="dt">June 2026 to present</div><p>Built audio ingestion, speech-to-text and RAG pipelines on Azure for a wealth-management platform serving 10,000+ mutual fund distributors.</p><ul class="bl"><li>Tuned speech-to-text (Sarvam AI, Whisper) with spectral noise reduction for multilingual Indian English and Hindi advisor calls.</li><li>RAG summarization layer that turns advisory calls and portfolio reviews into structured CRM action items.</li><li>Automated document and transcript extraction, cutting manual documentation turnaround by 80%.</li></ul></div></div></div></section>
 <section id="work"><h2>Selected work</h2><p class="lede">Most of it started with one question: how do we make practice feel like play?</p><div id="groups"></div></section>
-<section><h2>Tools I reach for</h2><div class="skills"><span>Python</span><span>PyTorch</span><span>LangGraph</span><span>RAG</span><span>Speech and audio ML</span><span>Computer vision</span><span>Reinforcement learning</span><span>Robotics simulation</span><span>FastAPI</span><span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Docker</span><span>Azure</span></div></section>
-<footer class="contact" id="contact"><h2>Let's build something useful.</h2><p class="lede" style="margin:0">Message me on LinkedIn or browse the code on GitHub.</p><div class="btns"><a class="btn f" href="https://www.linkedin.com/in/ananya-sridhar-ai">Message on LinkedIn</a><a class="btn" href="https://github.com/darayavahoush">See GitHub</a></div></footer>
+<section id="education"><h2>Education</h2><div class="grp" style="--c:#8b7bff"><h3>SASTRA<small>Thanjavur, 2023 to 2027</small></h3><div><div class="p"><h4>B.Tech, Robotics and Artificial Intelligence</h4><p>Shanmugha Arts, Science, Technology and Research Academy.</p></div></div></div></section>
+<section><h2>Tools I reach for</h2><div class="skills"><span>PyTorch</span><span>Hugging Face</span><span>LangGraph</span><span>LangChain</span><span>ChromaDB</span><span>Deep RL</span><span>Faster-Whisper</span><span>OpenCV</span><span>MediaPipe</span><span>MuJoCo</span><span>FastAPI</span><span>WebSockets</span><span>PostgreSQL</span><span>React</span><span>Docker</span><span>Azure</span></div></section>
+<footer class="contact" id="contact"><h2>Let's build something useful.</h2><p class="lede" style="margin:0">Open to full-time roles, research collaborations and high-impact engineering work.</p><div class="btns"><a class="btn f" href="mailto:ananyasridhar108@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/ananyasridhar-ai">LinkedIn</a><a class="btn" href="https://github.com/darayavahoush">See GitHub</a></div></footer>
 </div>
 <noscript><p class="w">Enable JavaScript to see projects, or visit <a href="https://github.com/darayavahoush">github.com/darayavahoush</a>.</p></noscript>
 <script>
@@ -93,21 +95,20 @@ var G="https://github.com/darayavahoush/";
 // To add a project: copy one entry. "live" is optional; it adds a Live demo button and a chip at the top.
 var GROUPS=[
 {n:"Speech and health",s:"Tools for therapists, parents and children.",c:"var(--mint)",p:[
- {t:"Vaaksudhi",d:"Speech therapy platform with LangGraph-based pronunciation assessment, four adaptive-difficulty games, a therapist dashboard and a parent portal.",g:["LangGraph","FastAPI","React"],live:"https://vaaksudhi.manaslearning.com",code:"agenti_ai",hl:1},
+ {t:"Vaaksudhi",d:"Speech therapy platform with a LangGraph pronunciation assessment across 8 Indian languages, a Q-learning difficulty controller for the practice games, a therapist dashboard and a parent portal.",g:["LangGraph","RL","FastAPI","React"],live:"https://vaaksudhi.manaslearning.com",code:"agenti_ai",hl:1},
  {t:"Vaakify",d:"Gamified speech practice for children with autism, with animated character companions, phoneme-level verification and multi-language support.",g:["faster-whisper","wav2vec2","React"],live:"https://vaakify.manaslearning.com",code:"speech-repeater",hl:1},
- {t:"Quest Hub",d:"One containerized hub bringing BreathQuest, VaakMirror and Chime together. VaakMirror tracks oral motor movement and facial landmarks with MediaPipe; Chime practises phoneme articulation using Librosa and Praat.",g:["Docker","MediaPipe","Librosa"],code:"quest-games",extra:[["VaakMirror","vaakmirror"],["Chime","phonemequest"]]},
  {t:"In Their World",d:"Four short interactive simulations of autism, ADHD, dyslexia and speech and language difficulties, paired with Indian prevalence data and practical strategies for parents and teachers.",g:["interactive","education"],live:"https://intheirworld.vercel.app",code:"in-their-world"},
  {t:"VaakBot",d:"Retrieval-augmented chatbot for clinical and practical guidance on speech therapy and autism care. Answers only from a vetted reference library, and points people to a human when it isn't confident.",g:["RAG","Azure OpenAI","FastAPI"],live:"",code:"vaakbot"}]},
 {n:"Language and law",s:"Language models for real documents.",c:"#8b7bff",p:[
- {t:"NyayAI",d:"Specialized legal LLM and RAG system for Indian bail jurisprudence, case-law retrieval and precedent analysis.",g:["LLM","RAG","legal AI"],code:"nyayai"},
+ {t:"NyayAI",d:"Domain-tuned legal LLM and ChromaDB RAG assistant that grounds bail verdicts in verified Indian Supreme Court case law.",g:["LLM","ChromaDB","RAG"],code:"nyayai"},
  {t:"Misinformation Profiler",d:"Real-time explainable framework for detecting social media misinformation with DistilBERT and BART, explained through LIME and SHAP.",g:["DistilBERT","SHAP","Next.js"],code:"misinformation-profiler"}]},
 {n:"Agents and robots",s:"Planning and sensing under pressure.",c:"var(--pink)",p:[
- {t:"FireBot (NIRVANA)",d:"Autonomous firefighting robot with MuJoCo physics simulation, MM-FusionRL, EIF sensor fusion, lidar exploration and a web console.",g:["MuJoCo","sensor fusion","RL"],live:"https://darayavahoush.github.io/firebot/",code:"firebot"},
+ {t:"FireBot (NIRVANA)",d:"Autonomous firefighting robot with MuJoCo 3D physics simulation, multimodal cross-attention deep RL, Extended Information Filter sensor fusion, lidar exploration and a web console.",g:["MuJoCo","deep RL","sensor fusion"],live:"https://darayavahoush.github.io/firebot/",code:"firebot"},
  {t:"Robotic Manipulator Simulator",d:"3-DOF RRR and PPP manipulators with interactive 3D forward and inverse kinematics, workspace analysis and trajectory optimization.",g:["kinematics","optimization","3D"],live:"https://robotic-manipulator-bice.vercel.app",code:"robotic-manipulator"},
  {t:"Aegis disaster response",d:"Multi-agent simulation where drones, rescue teams and vehicles coordinate under resource pressure. Built with Avinandan and Saatwik. I built the command-center frontend, the gateway service, and the A* and MCTS planning.",g:["A*","MCTS","multi-agent"],code:"disaster-response-game"},
  {t:"Platform Agent",d:"Autonomous 2D platformer agent combining computer vision perception, A* and MCTS path planning, and reinforcement learning.",g:["computer vision","MCTS","RL"],code:"platform-agent"}]},
 {n:"Vision, security and modeling",s:"Counting, matching, detecting, forecasting.",c:"var(--sun)",p:[
- {t:"Vehicle Counter",d:"Live vehicle counting from CCTV and RTSP feeds. CPU-only background subtraction, centroid tracking and virtual tripwire line-crossing counts, streamed over MJPEG and WebSocket.",g:["OpenCV","tracking","WebSocket"],live:"https://tripwire-inky.vercel.app",code:"vehicle-counter"},
+ {t:"Tripwire (Vehicle Counter)",d:"CPU-only, edge-ready vehicle counter for live CCTV and RTSP feeds. Background subtraction, centroid tracking and virtual tripwire counts, streamed over WebSocket with sub-50ms detection.",g:["OpenCV","tracking","WebSocket"],live:"https://tripwire-inky.vercel.app",code:"vehicle-counter"},
  {t:"GECO-Enhanced",d:"Confidence-aware semantic correspondence between images using DINOv2 features and Optimal Transport.",g:["DINOv2","optimal transport"],code:"geco"},
  {t:"Aegis insider threat detector",d:"Multi-modal behavioral biometric system for insider threat detection using keystroke dynamics and voice acoustics.",g:["biometrics","cybersecurity"],code:"aegis-insider-threat-detector"},
  {t:"Epimargin",d:"Research-grade epidemiological modeling: spatial metapopulation simulation, policy optimization and Bayesian empirical Rt estimation, in Python and React 19.",g:["Bayesian","FastAPI","React"],code:"epimargin"}]}
