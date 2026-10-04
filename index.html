@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ananya Sridhar — AI engineer building speech tools for kids</title>
+<title>Ananya Sridhar — AI engineer</title>
 <meta name="description" content="Ananya Sridhar builds AI systems for speech therapy, robotics and computer vision.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231a1446'/%3E%3Crect x='18' y='38' width='12' height='24' rx='6' fill='%23ffc93c'/%3E%3Crect x='44' y='22' width='12' height='56' rx='6' fill='%232bd4a0'/%3E%3Crect x='70' y='34' width='12' height='32' rx='6' fill='%23ff6fb1'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,7 +42,7 @@ h2{font:700 clamp(28px,4.5vw,42px)/1.1 var(--d);letter-spacing:-.025em;margin:0 
 .grp>h3{font:800 22px/1.15 var(--d);margin:0;position:relative;padding-left:22px}
 .grp>h3::before{content:"";position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:50%;background:var(--c)}
 .grp>h3 small{display:block;font:500 14px/1.45 var(--b);color:var(--mut);margin-top:6px}
-.p{padding:0 0 26px}.p+.p{padding-top:26px;border-top:1px solid var(--line)}.p:last-child{padding-bottom:0}
+.p{padding:0 0 26px}.p+.p{padding-top:26px;border-top:1px solid var(--line)}.p:last-child{padding-bottom:0}.p.hl:last-child{padding-bottom:24px;margin-bottom:0}
 .p h4{font:700 21px/1.25 var(--d);margin:0 0 6px}
 .p p{margin:0 0 12px;color:var(--mut);max-width:40em}
 .tags{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;color:var(--mut);margin:0 0 10px;padding:0;list-style:none}
@@ -59,79 +59,71 @@ h2{font:700 clamp(28px,4.5vw,42px)/1.1 var(--d);letter-spacing:-.025em;margin:0 
 .btn:hover{background:var(--mint);color:#1a1446;border-color:#1a1446}
 @media (max-width:760px){.feat{grid-template-columns:1fr}.grp{grid-template-columns:1fr;gap:16px}.feat .l,.feat .r{padding:26px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.live{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0}
+.live a{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:99px;background:var(--ink);color:var(--bg);font-weight:600;font-size:15px;text-decoration:none}
+.live a::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--mint)}
+.live a:hover{background:var(--mint);color:#1a1446}
+.lk a.go{background:var(--ink);color:var(--bg);padding:7px 16px;border-radius:99px;text-decoration:none}
+.lk a.go:hover{background:var(--mint);color:#1a1446}
+.lk{flex-wrap:wrap;align-items:center}
+.p.hl{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px;margin-bottom:26px}
+.p.hl+.p{border-top:0;padding-top:0}
 </style>
 </head>
 <body>
 <div class="w">
 <nav><a class="me" href="#top">Ananya Sridhar</a><div><a href="#work">Work</a><a href="#contact">Contact</a></div></nav>
-
 <header class="hero" id="top">
   <h1>I build AI that <em>listens</em> to kids learning to speak.</h1>
-  <p class="sub">AI engineer working on speech therapy tools, multi-agent systems, robotics and computer vision research.</p>
+  <p class="sub">AI engineer working on speech therapy, language and law, robotics, and computer vision. Everything below is real code; the projects marked live you can open and use.</p>
+  <div class="live" id="live" aria-label="Live projects"></div>
   <canvas id="wave" role="img" aria-label="Animated sound wave"></canvas>
   <div class="hint">Move your cursor over the wave.</div>
 </header>
-
-<section id="work">
-  <h2>Selected work</h2>
-  <p class="lede">Most of it started with one question: how do we make practice feel like play?</p>
-
-  <article class="feat" data-id="agenti">
-    <div class="l">
-      <h3>Vaaksudhi</h3>
-      <p>A speech therapy platform for children. It scores pronunciation across 8 Indian languages with a LangGraph assessment, adapts game difficulty to each child, and gives therapists a dashboard and parents a portal.</p>
-      <ul class="tags" style="margin-top:18px;--c:var(--mint)"><li>FastAPI</li><li>React</li><li>LangGraph</li><li>PostgreSQL</li></ul>
-      <div class="lk" style="color:#fff"><a href="https://github.com/darayavahoush/agenti_ai" style="color:var(--mint)">View code</a></div>
-    </div>
-    <div class="r">
-      <div class="chars"><span>BreathQuest</span><span>VoiceHurdleRace</span><span>VaakMirror</span><span>Chime</span></div>
-      <p>Four games, one adaptive engine, English to Bengali.</p>
-    </div>
-  </article>
-
-  <div class="grp" style="--c:var(--mint)">
-    <h3>Speech and health<small>Tools for therapists, parents and children.</small></h3>
-    <div>
-      <div class="p" data-id="vaakify"><h4>Vaakify</h4><p>Pronunciation practice with six animated character companions. Checks phoneme-level accuracy in English, Hindi and Kannada, and builds a drill when a child keeps missing the same sounds.</p><ul class="tags"><li>faster-whisper</li><li>wav2vec2</li><li>React</li></ul><div class="lk"><a href="https://github.com/darayavahoush/speech-repeater">Code</a></div></div>
-      <div class="p" data-id="quest"><h4>Quest Hub</h4><p>One containerized hub for BreathQuest, VaakMirror and Chime, so therapy games share a single login and database.</p><ul class="tags"><li>Docker</li><li>Hugging Face Spaces</li></ul><div class="lk"><a href="https://github.com/darayavahoush/quest-games">Code</a></div></div>
-      <div class="p" data-id="vaakbot"><h4>VaakBot</h4><p>A retrieval-augmented chatbot that answers speech therapy and autism care questions from a clinical reference library. Designed for 100 to 200 users at about ₹3,000 to ₹5,000 a month.</p><ul class="tags"><li>RAG</li><li>Azure OpenAI</li><li>Azure AI Search</li></ul><div class="lk"><a href="https://github.com/darayavahoush/vaakbot">Code</a></div></div>
-    </div>
-  </div>
-
-  <div class="grp" style="--c:var(--pink)">
-    <h3>Agents and robots<small>Planning and sensing under pressure.</small></h3>
-    <div>
-      <div class="p" data-id="aegis"><h4>Aegis</h4><p>A disaster response simulation where drones, rescue teams and vehicles coordinate after floods, cyclones and earthquakes. Combines RL and LLM agents, A* and MCTS planning, and CNN and LSTM perception. Built with Avinandan and Saatwik.</p><ul class="tags"><li>multi-agent</li><li>reinforcement learning</li><li>MCTS</li></ul><div class="lk"><a href="https://github.com/darayavahoush/disaster-response-game">Code</a></div></div>
-      <div class="p" data-id="firebot"><h4>FireBot</h4><p>An autonomous firefighting robot with a simulator, bearing-only Extended Information Filter sensor fusion, motion planning, PPO training and a fire-event database.</p><ul class="tags"><li>sensor fusion</li><li>PPO</li><li>PostgreSQL</li></ul><div class="lk"><a href="https://github.com/darayavahoush/firebot">Code</a></div></div>
-      <div class="p" data-id="arm"><h4>Robotic Manipulator Simulator</h4><p>Interactive 3D forward and inverse kinematics for RRR and PPP arms, with workspace analysis, trajectory tracking and link-length optimization.</p><ul class="tags"><li>kinematics</li><li>optimization</li></ul><div class="lk"><a href="https://github.com/darayavahoush/robotic-manipulator">Code</a></div></div>
-    </div>
-  </div>
-
-  <div class="grp" style="--c:var(--sun)">
-    <h3>Vision research<small>Finding what matches.</small></h3>
-    <div>
-      <div class="p" data-id="geco"><h4>GECO-Enhanced</h4><p>Finds matching keypoints between two images of the same kind of object, using DINOv2 features and confidence-weighted Optimal Transport. Click a point on one image and see where it lands on the other.</p><ul class="tags"><li>DINOv2</li><li>optimal transport</li><li>PyTorch</li></ul><div class="lk"><a href="https://github.com/darayavahoush/geco">Code</a></div></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Tools I reach for</h2>
-  <div class="skills"><span>Python</span><span>PyTorch</span><span>LangGraph</span><span>RAG</span><span>Speech and audio ML</span><span>Computer vision</span><span>Reinforcement learning</span><span>Robotics simulation</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>Azure</span></div>
-</section>
-
-<footer class="contact" id="contact">
-  <h2>Let's build something useful.</h2>
-  <p class="lede" style="margin:0">Message me on LinkedIn or browse the code on GitHub.</p>
-  <div class="btns"><a class="btn f" href="https://www.linkedin.com/in/ananya-sridhar-ai">Message on LinkedIn</a><a class="btn" href="https://github.com/darayavahoush">See GitHub</a></div>
-</footer>
+<section id="work"><h2>Selected work</h2><p class="lede">Most of it started with one question: how do we make practice feel like play?</p><div id="groups"></div></section>
+<section><h2>Tools I reach for</h2><div class="skills"><span>Python</span><span>PyTorch</span><span>LangGraph</span><span>RAG</span><span>Speech and audio ML</span><span>Computer vision</span><span>Reinforcement learning</span><span>Robotics simulation</span><span>FastAPI</span><span>React</span><span>Next.js</span><span>PostgreSQL</span><span>Docker</span><span>Azure</span></div></section>
+<footer class="contact" id="contact"><h2>Let's build something useful.</h2><p class="lede" style="margin:0">Message me on LinkedIn or browse the code on GitHub.</p><div class="btns"><a class="btn f" href="https://www.linkedin.com/in/ananya-sridhar-ai">Message on LinkedIn</a><a class="btn" href="https://github.com/darayavahoush">See GitHub</a></div></footer>
 </div>
-
+<noscript><p class="w">Enable JavaScript to see projects, or visit <a href="https://github.com/darayavahoush">github.com/darayavahoush</a>.</p></noscript>
 <script>
-// Add live demo URLs by project id; a "Live demo" link appears automatically.
-var LIVE={agenti:"",vaakify:"",quest:"",vaakbot:"",aegis:"",firebot:"",geco:"",arm:""};
-document.querySelectorAll("[data-id]").forEach(function(e){var u=LIVE[e.dataset.id];if(!u)return;var a=document.createElement("a");a.href=u;a.textContent="Live demo";e.querySelector(".lk").prepend(a)});
-
+var G="https://github.com/darayavahoush/";
+// To add a project: copy one entry. "live" is optional; it adds a Live demo button and a chip at the top.
+var GROUPS=[
+{n:"Speech and health",s:"Tools for therapists, parents and children.",c:"var(--mint)",p:[
+ {t:"Vaaksudhi",d:"Speech therapy platform with LangGraph-based pronunciation assessment, four adaptive-difficulty games, a therapist dashboard and a parent portal.",g:["LangGraph","FastAPI","React"],live:"https://vaaksudhi.manaslearning.com",code:"agenti_ai",hl:1},
+ {t:"Vaakify",d:"Gamified speech practice for children with autism, with animated character companions, phoneme-level verification and multi-language support.",g:["faster-whisper","wav2vec2","React"],live:"https://vaakify.manaslearning.com",code:"speech-repeater",hl:1},
+ {t:"BreathQuest",d:"Respiratory and speech therapy platform with six interactive canvas mini-games for children.",g:["FastAPI","PostgreSQL","canvas"],live:"https://breathquest-three.vercel.app",code:"breathquest"},
+ {t:"Quest Hub",d:"One containerized hub bringing BreathQuest, VaakMirror and Chime together. VaakMirror tracks oral motor movement and facial landmarks with MediaPipe; Chime practises phoneme articulation using Librosa and Praat.",g:["Docker","MediaPipe","Librosa"],code:"quest-games",extra:[["VaakMirror","vaakmirror"],["Chime","phonemequest"]]},
+ {t:"In Their World",d:"Four short interactive simulations of autism, ADHD, dyslexia and speech and language difficulties, paired with Indian prevalence data and practical strategies for parents and teachers.",g:["interactive","education"],live:"https://intheirworld.vercel.app",code:"in-their-world"},
+ {t:"VaakBot",d:"Azure retrieval-augmented chatbot for clinical and practical guidance on speech therapy and autism care.",g:["RAG","Azure OpenAI"],code:"vaakbot"}]},
+{n:"Language and law",s:"Language models for real documents.",c:"#8b7bff",p:[
+ {t:"NyayAI",d:"Specialized legal LLM and RAG system for Indian bail jurisprudence, case-law retrieval and precedent analysis.",g:["LLM","RAG","legal AI"],code:"nyayai"},
+ {t:"AI Bail Reckoner",d:"Legal assistant that predicts bail hearing outcomes and retrieves relevant precedents using attention-based deep learning and RAG.",g:["deep learning","RAG"],code:"bail_genai_project"},
+ {t:"Misinformation Profiler",d:"Real-time explainable framework for detecting social media misinformation with DistilBERT and BART, explained through LIME and SHAP.",g:["DistilBERT","SHAP","Next.js"],code:"misinformation-profiler"}]},
+{n:"Agents and robots",s:"Planning and sensing under pressure.",c:"var(--pink)",p:[
+ {t:"FireBot (NIRVANA)",d:"Autonomous firefighting robot with MuJoCo physics simulation, MM-FusionRL, EIF sensor fusion, lidar exploration and a web console.",g:["MuJoCo","sensor fusion","RL"],live:"https://darayavahoush.github.io/firebot/",code:"firebot"},
+ {t:"Robotic Manipulator Simulator",d:"3-DOF RRR and PPP manipulators with interactive 3D forward and inverse kinematics, workspace analysis and trajectory optimization.",g:["kinematics","optimization","3D"],live:"https://robotic-manipulator-bice.vercel.app",code:"robotic-manipulator"},
+ {t:"Aegis disaster response",d:"Multi-agent simulation where drones, rescue teams and vehicles coordinate under resource pressure. Built with Avinandan and Saatwik. I built the command-center frontend, the gateway service, and the A* and MCTS planning.",g:["A*","MCTS","multi-agent"],code:"disaster-response-game"},
+ {t:"Platform Agent",d:"Autonomous 2D platformer agent combining computer vision perception, A* and MCTS path planning, and reinforcement learning.",g:["computer vision","MCTS","RL"],code:"platform-agent"}]},
+{n:"Vision, security and modeling",s:"Counting, matching, detecting, forecasting.",c:"var(--sun)",p:[
+ {t:"Vehicle Counter",d:"Live vehicle counting from CCTV and RTSP feeds. CPU-only background subtraction, centroid tracking and virtual tripwire line-crossing counts, streamed over MJPEG and WebSocket.",g:["OpenCV","tracking","WebSocket"],live:"https://tripwire-inky.vercel.app",code:"vehicle-counter"},
+ {t:"GECO-Enhanced",d:"Confidence-aware semantic correspondence between images using DINOv2 features and Optimal Transport.",g:["DINOv2","optimal transport"],code:"geco"},
+ {t:"Aegis insider threat detector",d:"Multi-modal behavioral biometric system for insider threat detection using keystroke dynamics and voice acoustics.",g:["biometrics","cybersecurity"],code:"aegis-insider-threat-detector"},
+ {t:"Epimargin",d:"Research-grade epidemiological modeling: spatial metapopulation simulation, policy optimization and Bayesian empirical Rt estimation, in Python and React 19.",g:["Bayesian","FastAPI","React"],code:"epimargin"}]}
+];
+var gs=document.getElementById("groups"),lv=document.getElementById("live");
+function A(h,l,c){return '<a'+(c?' class="'+c+'"':'')+' href="'+h+'">'+l+'</a>'}
+GROUPS.forEach(function(g){
+ var h='<div class="grp" style="--c:'+g.c+'"><h3>'+g.n+'<small>'+g.s+'</small></h3><div>';
+ g.p.forEach(function(p){
+  var l='';
+  if(p.live){l+=A(p.live,"Live demo","go");lv.insertAdjacentHTML("beforeend",A(p.live,p.t));}
+  l+=A(G+p.code,"Code");
+  (p.extra||[]).forEach(function(e){l+=A(G+e[1],e[0]+" code")});
+  h+='<div class="p'+(p.hl?' hl':'')+'"><h4>'+p.t+'</h4><p>'+p.d+'</p><ul class="tags">'+p.g.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul><div class="lk">'+l+'</div></div>';
+ });
+ gs.insertAdjacentHTML("beforeend",h+'</div></div>');
+});
 (function(){
 var c=document.getElementById("wave"),x=c.getContext("2d"),N=72,px=-1,t=0,cols=["#ffc93c","#2bd4a0","#ff6fb1"];
 var still=matchMedia("(prefers-reduced-motion:reduce)").matches;
